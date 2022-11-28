@@ -1,0 +1,36 @@
+#apiVersion: apps/v1
+#kind: Deployment
+#metadata:
+#  name: nginx
+#  labels:
+#    app: spring-petclinic
+#spec:
+#  selector:
+#    matchLabels:
+#      app: spring-petclinic
+#      tier: nginx
+#  strategy:
+#    type: Recreate
+#  template:
+#    metadata:
+#      labels:
+#        app: spring-petclinic
+#        tier: nginx
+#    spec:
+#      volumes:
+#        - name: nginx
+#          configMap:
+#            name: nginx
+#      containers:
+#        - image: asia-northeast3-docker.pkg.dev/hyunyoung-01-368306/gcpzg/nginx
+#          imagePullPolicy: Always
+#          name: nginx
+#          ports:
+#            - name: http
+#              containerPort: 80
+#            - name: https
+#              containerPort: 443
+#          volumeMounts:
+#            - name: nginx
+#              mountPath: /etc/nginx
+#              readOnly: true
