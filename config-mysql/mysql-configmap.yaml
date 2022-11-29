@@ -5,4 +5,4 @@ metadata:
   labels:
     app: spring-petclinic
 data:
-  hostinfo: 10.98.250.3:3306
+  hostinfo: 10.182.103.2:3306

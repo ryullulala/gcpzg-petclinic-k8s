@@ -19,7 +19,7 @@ spec:
         tier: api-gateway
     spec:
       nodeSelector:
-        cloud.google.com/gke-nodepool: node-pool-ane-ab
+#        cloud.google.com/gke-nodepool: node-pool-ane-ab
       containers:
         - image: asia-northeast3-docker.pkg.dev/hyunyoung-01-368306/gcpzg/spring-petclinic-api-gateway:latest
           imagePullPolicy: Always
