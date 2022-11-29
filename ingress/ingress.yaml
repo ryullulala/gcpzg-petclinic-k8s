@@ -1,6 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
+  namespace: gcpzg
   name: ingress
   annotations:
     networking.gke.io/managed-certificates: "gcpzg-cert"

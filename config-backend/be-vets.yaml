@@ -1,6 +1,7 @@
 apiVersion: cloud.google.com/v1
 kind: BackendConfig
 metadata:
+  namespace: gcpzg
   name: vets-be
 spec:
   healthCheck:
