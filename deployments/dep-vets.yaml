@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: gcpzg
   name: vets
   labels:
     app: spring-petclinic
