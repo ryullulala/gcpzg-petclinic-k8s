@@ -44,6 +44,11 @@ spec:
                 key: password
           - name: spring.profiles.active
             value: mysql
+          resources:
+            requests:
+              cpu: "250m"
+            limits:
+              cpu: "500m"
           readinessProbe:
             httpGet:
               path: /actuator
