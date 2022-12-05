@@ -46,10 +46,13 @@ spec:
             value: mysql
           resources:
             requests:
-              cpu: "250m"
+              cpu: "200m"
             limits:
-              cpu: "500m"
+              cpu: "200m"
           readinessProbe:
             httpGet:
               path: /actuator
               port: 8080
+            periodSeconds: 30
+            successThreshold: 1
+            failureThreshold: 3
