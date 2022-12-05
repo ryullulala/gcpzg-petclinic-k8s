@@ -11,7 +11,7 @@ spec:
       app: spring-petclinic
       tier: vets
   strategy:
-    type: Recreate
+    type: RollingUpdate
   template:
     metadata:
       labels:
